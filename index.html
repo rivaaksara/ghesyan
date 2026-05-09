@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Desain muhammad ghesyan ilhammmi</title>
+    <style>
+        /* Dasar Halaman Biru Langit Berkilau */
+        body {
+            background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        /* Kotak Utama dengan Garis Putus-putus */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border: 4px dashed #0288d1; /* Garis Putus-putus Biru Langit */
+            border-radius: 45px;
+            padding: 45px;
+            max-width: 750px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(2, 136, 209, 0.2);
+            position: relative;
+        }
+
+        /* Navigasi Ref (Home, Profil, Kontak) */
+        nav {
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            border: 1px solid #81d4fa;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #01579b;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 8px 15px;
+            transition: 0.3s;
+            border-radius: 15px;
+        }
+
+        nav a:hover {
+            background-color: #e1f5fe;
+            color: #0288d1;
+            box-shadow: 0 0 10px rgba(129, 212, 250, 0.5);
+        }
+
+        /* Judul & Teks Pengantar */
+        h1 { color: #01579b; font-size: 2.3em; margin-bottom: 10px; }
+        .lecturer { color: #0288d1; font-weight: bold; display: block; margin-bottom: 25px; }
+
+        .intro-text {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 25px;
+            color: #263238;
+            line-height: 2;
+            text-align: justify;
+            border-left: 10px solid #81d4fa;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+        }
+
+        /* Nama muhammad ghesyan lhammi */
+        .name-highlight {
+            font-size: 2.2em;
+            color: #0277bd;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .campus-info {
+            display: inline-block;
+            background: #0288d1;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 50px;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .sparkle { position: absolute; top: 20px; left: 20px; font-size: 1.5em; }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <div class="sparkle">✨💎☁️</div>
+        
+        <!-- Navigasi dengan Link H-REF -->
+        <nav>
+            <a href="#home1.html">Home</a>
+            <a href="#profile1.html">Profil</a>
+            <a href="#contacts.html">Kontak</a>
+        </nav>
+
+        <section id="home">
+            <h1>Selamat Datang</h1>
+            <span class="lecturer">Yth. Ibu Efmi Maiyana, M.Kom.</span>
+            
+            <div class="intro-text">
+                "Yth. Ibu Efmi Maiyana, M.Kom. Selamat datang di lembar digital persembahan saya. Melalui antarmuka yang bernuansa biru langit ini, saya, <b>muhammad ghesyan ilhammi</b>, mencoba mengejawantahkan perjalanan logika dan kreativitas yang saya tempuh di AMIK Bukittinggi[cite: 1, 3]. Desain ini bukan sekadar susunan elemen visual, melainkan sebuah narasi dedikasi dalam memahami struktur manajemen informatika yang kompleks namun harmonis. Seperti luasnya cakrawala, saya berharap setiap baris kode yang saya susun ini mampu menjadi pijakan awal bagi saya untuk terus mengeksplorasi ilmu pengetahuan, memberikan solusi digital yang inovatif, dan tetap menjaga nilai-nilai etika serta kesantunan dalam berkarya di bawah bimbingan Ibu."
+            </div>
+        </section>
+
+        <section id="profil">
+            <div class="name-highlight">muhammad ghesyan ilhammi</div>
+            <div class="campus-info">AMIK Bukittinggi</div>
+        </section>
+
+        <div id="kontak" style="margin-top: 40px; border-top: 2px dashed #81d4fa; padding-top: 20px;">
+            <p style="color: #01579b; font-style: italic;">"Mari menjalin silaturahmi dan berkolaborasi dalam kreativitas digital."</p>
+        </div>
+        
+        <p style="color: #0288d1; margin-top: 35px; font-size: 0.85em;">
+            &bull; by sann &bull;
+        </p>
+    </div>
+
+</body>
+</html>
