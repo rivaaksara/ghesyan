@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Web Design - muhammad ghesyan ilhammi</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --sky-blue: #a2d2ff;
+            --deep-blue: #3700b6;
+            --soft-white: #f8fbff;
+            --text-color: #2d3436;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--soft-white);
+            background: linear-gradient(180deg, #dcf0ff 0%, #ffffff 100%);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.8;
+        }
+
+        /* Container Utama */
+        .wrapper {
+            width: 90%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(162, 210, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(15px);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Dekorasi Elemen Lingkaran Biru */
+        .wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: var(--sky-blue);
+            border-radius: 50%;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        /* Judul / Nama */
+        .header-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--deep-blue);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .sub-title {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 0.9rem;
+            color: #74b9ff;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .line-separator {
+            width: 80px;
+            height: 2px;
+            background: var(--deep-blue);
+            margin: 0 auto 40px;
+        }
+
+        /* Paragraf Panjang */
+        .content-text {
+            font-size: 1.1rem;
+            text-align: justify;
+            color: #4a4a4a;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .content-text b {
+            color: var(--deep-blue);
+        }
+
+        /* Tombol Aksi */
+        .btn-action {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--deep-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 119, 182, 0.2);
+        }
+
+        .btn-action:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 119, 182, 0.3);
+        }
+
+        /* Footer Tugas */
+        .footer-assignment {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #b2bec3;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .wrapper { padding: 30px; }
+            .header-name { font-size: 2.2rem; }
+            .content-text { font-size: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    div class="wrapper">
+        <<p class="sub-title">Personal Digital Profile</p>
+        img src="<Ghey2.jpeg" width="640px" height="640px">
+        <h1 class="header-name">muhammad ghesyan ilhammmi</h1>
+        <div class="line-separator"></div>
+
+        <div class="content-text">
+            Perkenalkan, saya <b>muhammad ghesyan ilhammmi</b>. Melalui halaman ini, saya mengeksplorasi titik temu antara fungsionalitas teknologi dan keindahan visual dalam desain web. Bagi saya, desain bukan hanya tentang bagaimana sesuatu terlihat, tetapi tentang bagaimana sebuah informasi dapat disampaikan dengan cara yang paling efektif, bersih, dan berkesan. 
+            <br><br>
+            Di dunia digital yang terus berkembang, integritas desain yang rapi menjadi fondasi utama dalam menciptakan pengalaman pengguna yang bermakna. Saya berkomitmen untuk terus mendalami seni tata letak, harmoni warna, dan tipografi untuk menghadirkan solusi kreatif yang tidak hanya memanjakan mata, tetapi juga memberikan solusi nyata bagi setiap tantangan desain yang ada di masa depan.
+        </div>
+
+        
+        <div class="footer-assignment">
+            Tugas Kuliah Web Design &copy; 2026| muhammad ghesyan ilhammi
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - muhammad ghesyan ilhammi</title>
+    <!-- Import Font dan Ikon -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            /* Latar belakang biru langit yang menenangkan */
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .contact-card h2 {
+            color: #0369a1;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            background: #f0f9ff;
+            border-color: #7dd3fc;
+            box-shadow: 0 5px 15px rgba(125, 211, 252, 0.3);
+        }
+
+        .icon-box {
+            width: 45px;
+            height: 45px;
+            background: #e0f2fe;
+            color: #0284c7;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .contact-info {
+            text-align: left;
+        }
+
+        .contact-label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        .contact-value {
+            display: block;
+            font-size: 1rem;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #0284c7;
+        }
+
+        /* Responsif */
+        @media (max-width: 480px) {
+            .contact-card { padding: 25px; }
+            .contact-value { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-card">
+        <h2>Hubungi Saya</h2>
+        <p>Mari terhubung dan berkolaborasi untuk menciptakan karya digital yang luar biasa.</p>
+
+        <div class="contact-list">
+            <!-- Email -->
+            <a href="mailto:gesanilhammi@gmail.com" class="contact-item">
+                <div class="icon-box">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">gesanilhammi@gmail.com</span>
+                </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/gesannnn2" target="_blank" class="contact-item">
+                <div class="icon-box">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@gesannnn2</span>
+                </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/083186720395" target="_blank" class="contact-item">
+                <div class="icon-box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">WhatsApp</span>
+                    <span class="contact-value">08318620395</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer-text">
+            muhammad ghesyan ilhammi &copy; 2026
+            <a href="profile1.html"></a>
+        </div>
+    </div>
+
+</body>
+</html>
